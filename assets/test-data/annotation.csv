@@ -1,0 +1,3 @@
+sample,assembly_fasta,reference_fasta,organism,annotation_mode,database_release,reference_build,comparison_group
+sample_A,assets/test-data/sample_A.fa,assets/test-data/reference.fa,synthetic_bacterium,prokaryotic,syn-db-1,synthetic-v1,benchmark
+sample_B,assets/test-data/sample_B.fa,assets/test-data/reference.fa,synthetic_bacterium,prokaryotic,syn-db-1,synthetic-v1,benchmark

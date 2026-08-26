@@ -1,0 +1,2 @@
+sample	feature_scope	annotation_status	functional_status	orthology_status	synteny_status	completeness_status	fragmentation_status	database_release	release_status	note
+sample_A	gene-models	STUB	STUB	STUB	STUB	STUB	STUB	syn-db-1	STUB	Synthetic wiring only; no gene, orthology, synteny, or function claim

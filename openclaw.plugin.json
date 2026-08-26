@@ -1,0 +1,18 @@
+{
+  "id": "assembly-annotation-workbench",
+  "name": "Assembly Annotation Workbench",
+  "description": "Evidence-aware assembly annotation, orthology, synteny, and quality comparison.",
+  "version": "0.1.0",
+  "skills": [
+    "skills/assembly-annotation-workbench"
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "default": true
+      }
+    }
+  }
+}
