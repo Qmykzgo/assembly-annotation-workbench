@@ -101,7 +101,7 @@ def main() -> int:
     errors.extend(validate_manifest())
     errors.extend(validate_fixture())
     errors.extend(validate_manifest_file())
-    for relative in ("main.nf", "nextflow.config", "modules/profile_assembly.nf", "modules/annotate_genes.nf", "modules/summarize_annotation.nf", "modules/compare_orthology.nf", "modules/compare_synteny.nf", "modules/assess_annotation_quality.nf", "modules/assess_release.nf", "modules/collect_report.nf", "modules/provenance.nf"):
+    for relative in ("main.nf", "nextflow.config", "scripts/score_annotation.py", "assets/test-data/annotation_quality.fixture.tsv", "modules/profile_assembly.nf", "modules/annotate_genes.nf", "modules/summarize_annotation.nf", "modules/compare_orthology.nf", "modules/compare_synteny.nf", "modules/assess_annotation_quality.nf", "modules/assess_release.nf", "modules/collect_report.nf", "modules/provenance.nf"):
         if not (ROOT / relative).exists():
             errors.append(f"missing required file: {relative}")
     if errors:

@@ -18,6 +18,7 @@ The workflow validates an annotation manifest, profiles assembly identity, emits
 | Synteny | Emits collinearity/block comparison handoff separately from orthology |
 | Quality | Tracks completeness, fragmentation, partial models, and unresolved status |
 | Reporting | Emits TSV and Markdown comparison summaries |
+| ANNT scorer | Computes feature precision/recall and fragmentation from declared counts |
 | Provenance | Captures manifest, mode, tools, references, and interpretation guardrails |
 
 ## Quick start
@@ -25,6 +26,7 @@ The workflow validates an annotation manifest, profiles assembly identity, emits
 ```bash
 python3 scripts/validate_repo.py
 python3 scripts/validate_manifest.py assets/test-data/annotation.csv --check-paths
+python3 scripts/score_annotation.py assets/test-data/annotation_quality.fixture.tsv --output /tmp/annotation-quality.tsv --markdown /tmp/annotation-quality.md
 nextflow run main.nf -profile test -stub-run --outdir results/test
 ```
 

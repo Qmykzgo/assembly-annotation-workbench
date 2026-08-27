@@ -28,6 +28,9 @@ jobs:
       - name: Validate annotation manifest
         run: python scripts/validate_manifest.py assets/test-data/annotation.csv --check-paths
 
+      - name: Score annotation-quality fixture
+        run: python scripts/score_annotation.py assets/test-data/annotation_quality.fixture.tsv --output /tmp/annotation-quality.tsv --markdown /tmp/annotation-quality.md
+
       - name: Validate report summarizer
         run: python scripts/summarize_annotation.py assets/test-data/annotation.fixture.tsv --output /tmp/annotation.tsv --markdown /tmp/annotation.md
 

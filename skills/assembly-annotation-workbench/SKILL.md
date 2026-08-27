@@ -67,6 +67,8 @@ Synteny methods depend on gene order, anchors, genome alignment, and filtering. 
 
 ## Annotation-quality review
 
+The repository includes a deterministic `scripts/score_annotation.py` helper for testing feature-level precision/recall and fragmentation calculations from declared counts. Its synthetic fixture is wiring coverage, not a biological benchmark.
+
 | State | Meaning |
 |---|---|
 | `AVAILABLE` | Evidence was supplied and processed by the real route |

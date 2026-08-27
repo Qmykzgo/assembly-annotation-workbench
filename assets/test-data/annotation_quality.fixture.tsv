@@ -1,0 +1,3 @@
+sample	tool	feature_scope	database_release	reference_features	predicted_features	matched_features	partial_features	unannotated_reference	orthogroup_matches	synteny_blocks	orthology_status	synteny_status	release_status	note
+sample_A	bakta-or-prokka	protein-coding	syn-db-1	100	96	90	8	10	88	12	STUB	STUB	STUB	Synthetic wiring only; counts are not annotation performance
+sample_B	bakta-or-prokka	protein-coding	syn-db-1	100	92	84	14	16	80	10	STUB	STUB	STUB	Synthetic wiring only; counts are not annotation performance
